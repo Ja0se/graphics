@@ -1,29 +1,27 @@
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "gcc - 활성 파일 빌드 및 디버그",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "setupCommands": [
-                {
-                    "description": "gdb에 자동 서식 지정 사용",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "C/C++: gcc 활성 파일 빌드",
-            "miDebuggerPath": "/usr/bin/gdb"
-        }
-    ]
+#include "GL/freeglut.h"
+
+void init();
+void display();
+
+void DrawPoints(){
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(0,1,0);
+    glPointSize(10.0);
+    glBegin(GL_POINTS);
+    glVertex3f(0,0,0);
+    glEnd();
+    glFlush();
+}
+int main(int argc,char**argv){
+    int mode=GLUT_RGB|GLUT_SINGLE;
+    glutInit(&argc,argv);
+    glutInitDisplayMode(mode);
+    glutInitWindowPosition(100,100);
+    glutInitWindowSize(400,400);
+    glutCreateWindow("OPENGL");
+    glutSetWindowTitle("DAU CG");
+
+    glutDisplayFunc(DrawPoints);
+    glutMainLoop();
+    return 1;
 }
