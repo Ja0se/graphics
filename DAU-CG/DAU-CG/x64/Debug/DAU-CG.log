@@ -1,0 +1,6 @@
+﻿  week5_culling.cpp
+C:\Users\tpwls\source\repos\DAU-CG\DAU-CG\week5_culling.cpp(4,47): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\tpwls\source\repos\DAU-CG\DAU-CG\week5_culling.cpp(6,47): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\tpwls\source\repos\DAU-CG\DAU-CG\week5_culling.cpp(9,49): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\tpwls\source\repos\DAU-CG\DAU-CG\week5_culling.cpp(10,49): warning C4305: '초기화 중': 'double'에서 'GLfloat'(으)로 잘립니다.
+  DAU-CG.vcxproj -> C:\Users\tpwls\source\repos\DAU-CG\x64\Debug\DAU-CG.exe
